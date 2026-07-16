@@ -1,0 +1,29 @@
+public class accurance{
+    // Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+import java.util.Scanner;
+
+public class accurrance {
+   public accurrance() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      System.out.print("Enter an integer: ");
+      int var2 = var1.nextInt();
+      int var3 = 0;
+      int var4 = 0;
+
+      for(int var5 = Math.abs(var2); var5 > 0; var5 /= 10) {
+         int var6 = var5 % 10;
+         ++var3;
+         if (var6 == 2) {
+            ++var4;
+         }
+      }
+
+      System.out.println("Number of digits = " + var3);
+      System.out.println("Occurrences of digit 2 = " + var4);
+   }
+}
+
+}
